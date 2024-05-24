@@ -31,3 +31,121 @@ body {
   margin: 0px auto;
   padding: 0px 15px;
 }
+
+.title {
+  font-family: 'Yeseva One', serif;
+  font-size: 36px;
+  line-height: 120%;
+  color: #cc9900;
+  // .title_white
+
+  &_white {
+    color: #fff;
+  }
+}
+
+.header {
+  // .header__container
+
+  &__container {
+  }
+
+  // .header__content
+
+  &__content {
+  }
+}
+.main {
+  flex: 1 1 auto;
+}
+.ingredients {
+  background: url(../assets/ingredients/img/bg.jpg) 50% 0 / cover no-repeat;
+  // .ingredients__container
+
+  &__container {
+  }
+
+  // .ingredients__content
+
+  &__content {
+    padding: 100px 0px;
+  }
+
+  // .ingredients__body
+
+  &__body {
+    max-width: 570px;
+    padding: 75px 81px 78px 80px;
+    margin: 0px 0px 0px auto;
+    background: rgba(0, 0, 0, 0.67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  // .ingredients__title
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  // .ingredients__divider
+
+  &__divider {
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+  }
+
+  // .ingredients__decor
+
+  &__decor {
+    max-width: 100%;
+  }
+
+  // .ingredients__text
+
+  &__text {
+    line-height: 1.5;
+    color: #fff;
+    &:not(:last-child) {
+      margin-bottom: 68px;
+    }
+  }
+
+  // .ingredients__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 40px;
+    row-gap: 40px;
+  }
+
+  // .ingredients__image
+
+  &__image {
+    display: flex;
+    flex: 0 0 110px;
+    height: 110px;
+  }
+
+  // .ingredients__img
+
+  &__img {
+    border-radius: 50%;
+    border: solid 5px rgba(255, 255, 255, 0.09);
+    max-width: 100%;
+  }
+}
+
+.footer {
+  // .footer__container
+
+  &__container {
+  }
+}
