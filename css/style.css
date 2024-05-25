@@ -95,7 +95,7 @@ body {
 }
 
 .ingredients {
-  background: url(../assets/ingredients/img/bg.jpg) 50% 0/cover no-repeat;
+  background: url("../assets/ingredients/img/bg.jpg") 50% 0/cover no-repeat;
 }
 .ingredients__content {
   padding: 100px 0px;
@@ -120,10 +120,10 @@ body {
 .ingredients__title:not(:last-child) {
   margin-bottom: 15px;
 }
-.ingredients__divider:not(:last-child) {
+.ingredients__decor:not(:last-child) {
   margin-bottom: 23px;
 }
-.ingredients__decor {
+.ingredients__divider {
   max-width: 100%;
 }
 .ingredients__text {
@@ -160,4 +160,63 @@ body {
   border-radius: 50%;
   border: solid 5px rgba(255, 255, 255, 0.09);
   max-width: 100%;
+}
+
+.reviews {
+  background: url("../assets/reviews/img/bg.jpg") 50% 0/cover no-repeat;
+}
+.reviews__content {
+  padding: 100px 0px 102px 0px;
+}
+.reviews__body {
+  max-width: 770px;
+  padding: 75px 74px 104px 74px;
+  margin: 0px auto;
+  background: rgba(0, 0, 0, 0.67);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.reviews__title:not(:last-child) {
+  margin-bottom: 15px;
+}
+.reviews__decor:not(:last-child) {
+  margin-bottom: 18px;
+}
+.reviews__divider {
+  max-width: 100%;
+}
+.reviews__text {
+  position: relative;
+  font-family: "Gentium Book Plus", serif;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 180%;
+  color: #dde0df;
+}
+.reviews__text:not(:last-child) {
+  margin-bottom: 34px;
+}
+.reviews__text::before {
+  content: "“";
+  position: absolute;
+  top: 0;
+  left: -7.2%;
+  margin: 1% 0px 0px 0px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 72px;
+  line-height: 47%;
+  color: #757676;
+}
+.reviews__label {
+  font-size: 18px;
+  color: #fff;
 }

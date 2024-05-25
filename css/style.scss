@@ -59,7 +59,7 @@ body {
   flex: 1 1 auto;
 }
 .ingredients {
-  background: url(../assets/ingredients/img/bg.jpg) 50% 0 / cover no-repeat;
+  background: url('../assets/ingredients/img/bg.jpg') 50% 0 / cover no-repeat;
   // .ingredients__container
 
   &__container {
@@ -92,17 +92,17 @@ body {
     }
   }
 
-  // .ingredients__divider
+  // .ingredients__decor
 
-  &__divider {
+  &__decor {
     &:not(:last-child) {
       margin-bottom: 23px;
     }
   }
 
-  // .ingredients__decor
+  // .ingredients__divider
 
-  &__decor {
+  &__divider {
     max-width: 100%;
   }
 
@@ -143,9 +143,92 @@ body {
   }
 }
 
+.reviews {
+  background: url('../assets/reviews/img/bg.jpg') 50% 0 / cover no-repeat;
+  // .reviews__container
+
+  &__container {
+  }
+
+  // .reviews__content
+
+  &__content {
+    padding: 100px 0px 102px 0px;
+  }
+
+  // .reviews__body
+
+  &__body {
+    max-width: 770px;
+    padding: 75px 74px 104px 74px;
+    margin: 0px auto;
+    background: rgba(0, 0, 0, 0.67);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  // .reviews__title
+
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  // .reviews__decor
+
+  &__decor {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  // .reviews__divider
+
+  &__divider {
+    max-width: 100%;
+  }
+
+  // .reviews__text
+
+  &__text {
+    position: relative;
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 180%;
+    color: #dde0df;
+    &:not(:last-child) {
+      margin-bottom: 34px;
+    }
+    &::before {
+      content: '“';
+      position: absolute;
+      top: 0;
+      left: -7.2%;
+      margin: 1% 0px 0px 0px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 72px;
+      line-height: 47%;
+      color: #757676;
+    }
+  }
+
+  // .reviews__label
+
+  &__label {
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
 .footer {
   // .footer__container
 
   &__container {
   }
 }
+
+// font-family: Georgia, serif;
