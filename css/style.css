@@ -94,6 +94,80 @@ body {
           flex: 1 1 auto;
 }
 
+.about {
+  background: url("../assets/about/img/bg-decor.png") 50% 0/cover no-repeat, url("../assets/about/img/bg.png") 50% 0/cover no-repeat;
+}
+.about__content {
+  padding: 55px 0px 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.about__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 45%;
+          flex: 1 1 45%;
+  padding: 46px 0px 0px 0px;
+}
+.about__body {
+  max-width: 409px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.about__title:not(:last-child) {
+  margin-bottom: 13px;
+}
+.about__decor:not(:last-child) {
+  margin-bottom: 26px;
+}
+.about__divider {
+  max-width: 100%;
+}
+.about__text {
+  line-height: 150%;
+}
+.about__text:not(:last-child) {
+  margin-bottom: 49px;
+}
+.about__sign {
+  -webkit-transform: translate(16.5%, 0%);
+      -ms-transform: translate(16.5%, 0%);
+          transform: translate(16.5%, 0%);
+}
+.about__right {
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 55%;
+          flex: 1 1 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about__img {
+  max-width: 100%;
+}
+
 .ingredients {
   background: url("../assets/ingredients/img/bg.jpg") 50% 0/cover no-repeat;
 }
@@ -101,7 +175,7 @@ body {
   padding: 100px 0px;
 }
 .ingredients__body {
-  max-width: 570px;
+  max-width: 50%;
   padding: 75px 81px 78px 80px;
   margin: 0px 0px 0px auto;
   background: rgba(0, 0, 0, 0.67);
