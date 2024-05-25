@@ -95,7 +95,7 @@ body {
 }
 
 .about {
-  background: url("../assets/about/img/bg-decor.png") 50% 0/cover no-repeat, url("../assets/about/img/bg.png") 50% 0/cover no-repeat;
+  background: url("../assets/about/img/pattern.png") 50% 0/cover no-repeat, url("../assets/about/img/bg.png") 50% 0/cover no-repeat;
 }
 .about__content {
   padding: 55px 0px 30px 0px;
