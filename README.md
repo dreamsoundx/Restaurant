@@ -1,1 +1,1 @@
-https://dreamsoundx.github.io/restaurant
+https://dreamsoundx.github.io/restaurant-lambda
