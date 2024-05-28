@@ -116,41 +116,42 @@
                   us
                   out! Perfect materials and freshly baked food.
                 </p>
-                <div class="reservations__form form">
+                <form class="reservations__form form" action="#" method="get" enctype="multipart/form-data">
                   <div class="form__body">
                     <div class="form__item">
-                      <label for="input_01">Name</label>
-                      <input tabindex="1" id="input_01" autocomplete="off" placeholder="Строка" name="string" value=""
-                        type="text">
+                      <label class="form__label" for="input_01">Name</label>
+                      <input class="form__input" tabindex="1" id="input_01" autocomplete="off" placeholder="your name *"
+                        name="string" value="" type="text">
                     </div>
                     <div class="form__item">
-                      <label for="input_02">Name</label>
-                      <input tabindex="2" id="input_01" autocomplete="off" placeholder="Строка" name="string" value=""
-                        type="text">
+                      <label class="form__label" for="input_02">Name</label>
+                      <input class="form__input" tabindex="2" id="input_02" autocomplete="off"
+                        placeholder="your email *" name="string" value="" type="mail">
                     </div>
                     <div class="form__item">
-                      <label for="input_03">Date</label>
-                      <input tabindex="3" id="input_01" autocomplete="off" placeholder="Строка" name="string" value=""
-                        type="date">
+                      <label class="form__label" for="input_03">Date</label>
+                      <input class="form__input" tabindex="3" id="input_03" autocomplete="off" placeholder="date *"
+                        name="string" value="" type="date">
                     </div>
                     <div class="form__item">
-                      <label for="select_04">Party number</label>
-                      <select tabindex="4" name="select">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
+                      <label class="form__label" for="select_04">Party number</label>
+                      <select class="form__select" tabindex="4" id="select_04" name="select">
+                        <option class="form__option" disabled="" selected="" hidden="" value="">party number</option>
+                        <option class="form__option" value="1">1</option>
+                        <option class="form__option" value="2">2</option>
+                        <option class="form__option" value="3">3</option>
+                        <option class="form__option" value="4">4</option>
+                        <option class="form__option" value="5">5</option>
+                        <option class="form__option" value="6">6</option>
+                        <option class="form__option" value="7">7</option>
+                        <option class="form__option" value="8">8</option>
                       </select>
                     </div>
                   </div>
-                  <button class="form__button" type="submit">
+                  <button class="form__button" tabindex="5" type="submit">
                     Book now!
                   </button>
-                </div>
+                </form>
               </div>
             </div>
           </div>
