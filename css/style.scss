@@ -428,7 +428,7 @@ body {
 
   &__item {
     flex: 1 1 50%;
-    min-width: 100px;
+    min-width: 180px;
     display: flex;
     flex-direction: column;
     row-gap: 8px;
@@ -454,7 +454,7 @@ body {
     // padding: 10px 14px;
     background: rgba(255, 255, 255, 0.5);
     border: solid 1px #c8c6c6;
-    // width: 100%;
+    width: 100%;
     &::placeholder {
       padding: 0px 2px;
       font-family: 'Open Sans', sans-serif;
@@ -472,6 +472,7 @@ body {
   &__select {
     font-size: 16px;
     min-height: 36px;
+    width: 100%;
     padding: 0px 13px;
     background: rgba(255, 255, 255, 0.5);
     border: solid 1px #c8c6c6;
