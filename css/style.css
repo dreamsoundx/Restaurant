@@ -308,34 +308,33 @@ body {
   margin: 0px -15px;
   row-gap: 30px;
 }
-.reservations__left {
+.reservations__image {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
   padding: 0px 15px;
-}
-.reservations__images {
+  min-width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px -15px;
-}
-.reservations__image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
-  padding: 0px 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .reservations__img {
   max-width: 100%;
 }
-.reservations__right {
+.reservations__body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
   padding: 0px 15px;
 }
-.reservations__body {
+
+.body-reservations {
   padding: 0px 70px 0px 70px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -349,25 +348,26 @@ body {
           align-items: center;
   text-align: center;
 }
-.reservations__title:not(:last-child) {
+.body-reservations__title:not(:last-child) {
   margin-bottom: 13px;
 }
-.reservations__decor:not(:last-child) {
+.body-reservations__decor:not(:last-child) {
   margin-bottom: 24px;
 }
-.reservations__divider {
+.body-reservations__divider {
   max-width: 100%;
 }
-.reservations__text {
+.body-reservations__text {
   line-height: 150%;
 }
-.reservations__text:not(:last-child) {
+.body-reservations__text:not(:last-child) {
   margin-bottom: 10px;
 }
-.reservations__form:not(:first-child) {
+.body-reservations__form:not(:first-child) {
   margin-top: 32px;
 }
-.reservations .form {
+
+.form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,7 +376,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.reservations .form__body {
+.form__body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,10 +385,10 @@ body {
   margin: 0px -15px;
   row-gap: 25px;
 }
-.reservations .form__body:not(:last-child) {
+.form__body:not(:last-child) {
   margin-bottom: 32px;
 }
-.reservations .form__item {
+.form__item {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
@@ -403,59 +403,59 @@ body {
   row-gap: 8px;
   padding: 0px 15px;
 }
-.reservations .form__label {
+.form__label {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: bold;
   text-align: left;
   color: #c9a131;
 }
-.reservations .form__input {
+.form__input {
   font-size: 16px;
   min-height: 36px;
   padding: 0px 13px;
   background: rgba(255, 255, 255, 0.5);
   border: solid 1px #c8c6c6;
 }
-.reservations .form__input::-webkit-input-placeholder {
+.form__input::-webkit-input-placeholder {
   padding: 0px 2px;
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   text-align: left;
   color: #7c7c7c;
 }
-.reservations .form__input::-moz-placeholder {
+.form__input::-moz-placeholder {
   padding: 0px 2px;
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   text-align: left;
   color: #7c7c7c;
 }
-.reservations .form__input:-ms-input-placeholder {
+.form__input:-ms-input-placeholder {
   padding: 0px 2px;
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   text-align: left;
   color: #7c7c7c;
 }
-.reservations .form__input::-ms-input-placeholder {
+.form__input::-ms-input-placeholder {
   padding: 0px 2px;
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   text-align: left;
   color: #7c7c7c;
 }
-.reservations .form__input::placeholder {
+.form__input::placeholder {
   padding: 0px 2px;
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   text-align: left;
   color: #7c7c7c;
 }
-.reservations .form__input:hover {
+.form__input:hover {
   border: solid 1px #c89f2d;
 }
-.reservations .form__select {
+.form__select {
   font-size: 16px;
   min-height: 36px;
   padding: 0px 13px;
@@ -466,15 +466,15 @@ body {
   text-align: left;
   color: #7c7c7c;
 }
-.reservations .form__select:hover {
+.form__select:hover {
   border: solid 1px #c89f2d;
 }
-.reservations .form__option {
+.form__option {
   font-family: "Lato", sans-serif;
   font-style: normal;
   color: #4c4c4c;
 }
-.reservations .form__button {
+.form__button {
   cursor: pointer;
   -ms-flex-item-align: center;
       align-self: center;

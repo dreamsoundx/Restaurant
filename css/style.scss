@@ -337,25 +337,15 @@ body {
     row-gap: 30px;
   }
 
-  // .reservations__left
-
-  &__left {
-    flex: 1 1 50%;
-    padding: 0px 15px;
-  }
-
-  // .reservations__images
-
-  &__images {
-    display: flex;
-    margin: 0px -15px;
-  }
-
   // .reservations__image
 
   &__image {
-    flex: 1 1 50%;
+    flex: 1 1 25%;
     padding: 0px 15px;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   // .reservations__img
@@ -364,24 +354,22 @@ body {
     max-width: 100%;
   }
 
-  // .reservations__right
-
-  &__right {
-    flex: 1 1 50%;
-    padding: 0px 15px;
-  }
-
   // .reservations__body
 
   &__body {
-    padding: 0px 70px 0px 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex: 1 1 50%;
+    padding: 0px 15px;
   }
+}
 
-  // .reservations__title
+.body-reservations {
+  padding: 0px 70px 0px 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  //.body-reservations__title
 
   &__title {
     &:not(:last-child) {
@@ -389,7 +377,7 @@ body {
     }
   }
 
-  // .reservations__decor
+  // .body-reservations__decor
 
   &__decor {
     &:not(:last-child) {
@@ -397,13 +385,13 @@ body {
     }
   }
 
-  // .reservations__divider
+  // .body-reservations__divider
 
   &__divider {
     max-width: 100%;
   }
 
-  // .reservations__text
+  // .body-reservations__text
 
   &__text {
     line-height: 150%;
@@ -412,110 +400,110 @@ body {
     }
   }
 
-  // .reservations__form
+  // .body-reservations__form
 
   &__form {
     &:not(:first-child) {
       margin-top: 32px;
     }
   }
+}
 
-  .form {
+.form {
+  display: flex;
+  flex-direction: column;
+  // .form__body
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+    row-gap: 25px;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  // .form__item
+
+  &__item {
+    flex: 1 1 50%;
+    min-width: 100px;
     display: flex;
     flex-direction: column;
-    // .form__body
+    row-gap: 8px;
+    padding: 0px 15px;
+  }
 
-    &__body {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0px -15px;
-      row-gap: 25px;
-      &:not(:last-child) {
-        margin-bottom: 32px;
-      }
-    }
+  // .form__label
 
-    // .form__item
+  &__label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #c9a131;
+  }
 
-    &__item {
-      flex: 1 1 50%;
-      min-width: 100px;
-      display: flex;
-      flex-direction: column;
-      row-gap: 8px;
-      padding: 0px 15px;
-    }
+  // .form__input
 
-    // .form__label
-
-    &__label {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 14px;
-      font-weight: bold;
-      text-align: left;
-      color: #c9a131;
-    }
-
-    // .form__input
-
-    &__input {
-      font-size: 16px;
-      min-height: 36px;
-      padding: 0px 13px;
-      // padding: 10px 14px;
-      background: rgba(255, 255, 255, 0.5);
-      border: solid 1px #c8c6c6;
-      // width: 100%;
-      &::placeholder {
-        padding: 0px 2px;
-        font-family: 'Open Sans', sans-serif;
-        font-style: italic;
-        text-align: left;
-        color: #7c7c7c;
-      }
-      &:hover {
-        border: solid 1px #c89f2d;
-      }
-    }
-
-    // .form__select
-
-    &__select {
-      font-size: 16px;
-      min-height: 36px;
-      padding: 0px 13px;
-      background: rgba(255, 255, 255, 0.5);
-      border: solid 1px #c8c6c6;
+  &__input {
+    font-size: 16px;
+    min-height: 36px;
+    padding: 0px 13px;
+    // padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.5);
+    border: solid 1px #c8c6c6;
+    // width: 100%;
+    &::placeholder {
+      padding: 0px 2px;
       font-family: 'Open Sans', sans-serif;
       font-style: italic;
       text-align: left;
       color: #7c7c7c;
-      &:hover {
-        border: solid 1px #c89f2d;
-      }
     }
-
-    // .form__option
-
-    &__option {
-      font-family: 'Lato', sans-serif;
-      font-style: normal;
-      color: #4c4c4c;
-    }
-
-    // .form__button
-
-    &__button {
-      cursor: pointer;
-      align-self: center;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 16px;
-      text-align: center;
-      color: #fff;
-      padding: 7px 60px 7px 60px;
+    &:hover {
       border: solid 1px #c89f2d;
-      background-color: #c89f2d;
     }
+  }
+
+  // .form__select
+
+  &__select {
+    font-size: 16px;
+    min-height: 36px;
+    padding: 0px 13px;
+    background: rgba(255, 255, 255, 0.5);
+    border: solid 1px #c8c6c6;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    text-align: left;
+    color: #7c7c7c;
+    &:hover {
+      border: solid 1px #c89f2d;
+    }
+  }
+
+  // .form__option
+
+  &__option {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    color: #4c4c4c;
+  }
+
+  // .form__button
+
+  &__button {
+    cursor: pointer;
+    align-self: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    padding: 7px 60px 7px 60px;
+    border: solid 1px #c89f2d;
+    background-color: #c89f2d;
   }
 }
 
