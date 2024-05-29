@@ -26,7 +26,7 @@ body {
 }
 
 [class*='__container'] {
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0px auto;
   padding: 0px 15px;
 }
@@ -168,7 +168,7 @@ body {
   // .ingredients__body
 
   &__body {
-    max-width: 50%;
+    max-width: 48.71%;
     padding: 75px 81px 78px 80px;
     margin: 0px 0px 0px auto;
     background: rgba(0, 0, 0, 0.67);
@@ -340,12 +340,12 @@ body {
   // .reservations__image
 
   &__image {
-    flex: 1 1 25%;
     padding: 0px 15px;
+    flex: 1 1 25%;
     min-width: 250px;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
 
   // .reservations__img
